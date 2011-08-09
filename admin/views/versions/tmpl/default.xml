@@ -1,0 +1,8 @@
+<!-- This file is needed for this componemt to appear in the menu-type selection -->
+
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+    <layout title="versions">
+        <message>Message versions</message>
+    </layout>
+</metadata>

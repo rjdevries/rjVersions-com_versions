@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.7" method="upgrade">
+    <name>com_version</name>
+    <creationDate>August 2011</creationDate>
+    <author>Ronald J. de Vries</author>
+    <authorEmail>post@rjdevries.eu</authorEmail>
+    <authorUrl>http://www.rjdev.nl</authorUrl>
+    <license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+    <version>0.1</version>
+    <description>COM_VERSIONS_DESC</description>
+		
+    <administration>
+    	<menu link="option=versions">COM_VERSIONS</menu>
+        <files folder="admin">
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>versions.php</filename>
+			<folder>views</folder>
+		</files>
+		
+		<languages folder="admin">
+			<language tag="en-GB">languages/en-GB.com_versions.ini</language>
+			<language tag="en-GB">languages/en-GB.com_versions.sys.ini</language>
+			<language tag="nl-NL">languages/nl-NL.com_versions.ini</language>
+			<language tag="nl-NL">languages/nl-NL.com_versions.sys.ini</language>		
+		</languages>
+		
+    </administration>
+	
+</extension>
