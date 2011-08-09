@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="1.7" method="upgrade">
-    <name>com_version</name>
+    <name>com_versions</name>
     <creationDate>August 2011</creationDate>
     <author>Ronald J. de Vries</author>
     <authorEmail>post@rjdevries.eu</authorEmail>
