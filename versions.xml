@@ -6,7 +6,7 @@
     <authorEmail>post@rjdevries.eu</authorEmail>
     <authorUrl>http://www.rjdev.nl</authorUrl>
     <license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
-    <version>0.1</version>
+    <version>1.0</version>
     <description>COM_VERSIONS_DESC</description>
 
     <!-- Runs on install/uninstall/update; New in 1.6 -->
