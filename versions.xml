@@ -9,8 +9,8 @@
     <version>0.1</version>
     <description>COM_VERSIONS_DESC</description>
 
-	<!-- Runs on install/uninstall/update; New in 1.6 -->
-	<scriptfile>script.php</scriptfile>
+    <!-- Runs on install/uninstall/update; New in 1.6 -->
+    <scriptfile>script.php</scriptfile>
 	
     <administration>
     	<menu link="option=versions">COM_VERSIONS</menu>
