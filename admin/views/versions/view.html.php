@@ -29,11 +29,11 @@ class VersionsViewVersions extends JView {
         $db = JFactory::getDbo();
         
         $query	= $db->getQuery(true);
-	$query->select('#__versions.id, #__versions.modified, #__versions.modified_by, #__versions.version, #__users.username');
+	$query->select('#__versions.vid, #__versions.modified, #__versions.modified_by, #__versions.version, #__users.username');
 	$query->from('#__versions, #__users');
 	$query->where('#__versions.modified_by = #__users.id');
-        $query->where('content_id = '.$contentId);
-        $query->order('#__versions.id');
+        $query->where('#__versions.id = '.$contentId);
+        $query->order('#__versions.vid');
         
         $db->setQuery($query);
         $result = $db->loadRowList();
@@ -50,7 +50,7 @@ class VersionsViewVersions extends JView {
         $query	= $db->getQuery(true);
 	$query->select('`introtext`, `fulltext`');
 	$query->from('#__versions');
-	$query->where('id = '.(int) $versionsId);
+	$query->where('vid = '.(int) $versionsId);
         
         $db->setQuery($query);
 	$result = $db->loadRowList();

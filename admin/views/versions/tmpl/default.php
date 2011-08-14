@@ -6,13 +6,14 @@ defined('_JEXEC') or die('Restricted access');
 //$cleanEditor = JRequest::getCmd('function', 'cleanEditor');
 $function = JRequest::getCmd('function', 'jSelectVersion');
 
-$versionsCount = count($this->versions);
+
+if(isset($this->versions)) { $versionsCount = count($this->versions); }
 
 $eName	= JRequest::getVar('ename');
 $eName	= preg_replace( '#[^A-Z0-9\-\_\[\]]#i', '', $eName );
 
 // SHOW CONTENT
-if($this->content) {
+if(isset($this->content)) {
     // Place the article in one variable
     foreach($this->content as $i) {
         $article = $i['0'];
